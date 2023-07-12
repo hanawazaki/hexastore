@@ -1,6 +1,6 @@
 <template>
   <Disclosure as="nav" class="bg-primary" v-slot="{ open }">
-    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-7xl">
       <div class="relative flex h-20 items-center justify-between">
         <div class="absolute inset-y-0 left-0 flex items-center md:hidden">
           <!-- Mobile menu button-->
@@ -75,13 +75,14 @@ import {
 } from "@headlessui/vue";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/vue/24/outline";
 import Logo from "./Logo.vue";
+import { ref } from "vue";
 
-const navigation = [
+const navigation = ref([
   { name: "Home", href: "/", current: true },
   { name: "Men's", href: "/men", current: false },
   { name: "Women's", href: "/women", current: false },
   { name: "Kid's", href: "/kids", current: false },
   { name: "About Us", href: "/about", current: false },
   { name: "Contact Us", href: "/contact", current: false },
-];
+]);
 </script>

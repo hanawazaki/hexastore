@@ -10,7 +10,9 @@ export default {
         primary: '#D9D9D9',
         dark: '#1e1e1e',
         warning: '#FFA92E',
-        danger: '#F63232'
+        danger: '#F63232',
+        shade: 'rgba(0, 0, 0, 0.50)',
+        greyCst: '#F6F6F6'
       }
     },
   },

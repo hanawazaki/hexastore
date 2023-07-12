@@ -1,5 +1,5 @@
 <template>
-  <section class="mx-auto max-w-7xl px-2 h-[650px]">MEN</section>
+  <section class="mx-auto max-w-7xl px-2 h-[650px]">about</section>
 </template>
 
 <script setup></script>
