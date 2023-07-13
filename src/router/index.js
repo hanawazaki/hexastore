@@ -6,6 +6,8 @@ import Kids from '../pages/Kids.vue'
 import Accessories from '../pages/Accessories.vue'
 import About from '../pages/About.vue'
 import Contact from '../pages/Contact.vue'
+import Details from '../pages/Details.vue'
+import Cart from '../pages/Cart.vue'
 
 const routes = [
   { path: '/', component: Home },
@@ -15,6 +17,8 @@ const routes = [
   { path: '/accessories', component: Accessories },
   { path: '/about', component: About },
   { path: '/contact', component: Contact },
+  { path: '/details/:id', component: Details },
+  { path: '/cart', component: Cart },
 
 ]
 
