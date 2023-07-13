@@ -13,6 +13,10 @@ export default {
         danger: '#F63232',
         shade: 'rgba(0, 0, 0, 0.50)',
         greyCst: '#F6F6F6'
+      },
+      screens: {
+        '1440': '1440px',
+        'xs': '425px'
       }
     },
   },
