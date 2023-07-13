@@ -15,7 +15,7 @@ export default {
         greyCst: '#F6F6F6'
       },
       screens: {
-        '1440': '1440px',
+        'xl2': '1440px',
         'xs': '425px'
       }
     },
