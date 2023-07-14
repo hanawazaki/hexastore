@@ -257,6 +257,73 @@
       </div>
     </div>
   </section>
+  <section class="our-product bg-white min-h-screen">
+    <div
+      class="flex items-center max-w-7xl px-2 sm:px-6 lg:px-8 mx-auto my-[30px]"
+    >
+      <div class="our-product-text pr-[105px] w-6/12">
+        <h2 class="text-4xl font-bold mb-5">Explore Our Products</h2>
+        <p class="text-sm font-normal">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem IpsuLorem Ipsum is simply dummy text of
+          the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text ever since the 1500s, when an unknown
+          printer took a galley of type and scrambled it to make a type specimen
+          book. It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged. It was
+          popularised in the 1960s with the release of Letraset sheets
+          containing Lorem Ipsum passages, and more recently with desktop
+          publishing software like Aldus PageMaker including versions of Lorem
+          IpsuLorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsu
+        </p>
+      </div>
+      <div class="w-6/12">
+        <div class="grid grid-cols-2 gap-5">
+          <!--  -->
+          <div class="our-product-image1 flex items-center justify-center">
+            <div class="text">
+              <h3 class="text-4xl font-bold">Leather Bags</h3>
+              <p class="text-sm font-normal">
+                Lorem Ipsum is simply dummy text
+              </p>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="our-product-image2"></div>
+          <!--  -->
+          <!--  -->
+          <div class="our-product-image3"></div>
+          <!--  -->
+          <!--  -->
+          <div class="our-product-image4 flex items-center justify-center">
+            <div class="text">
+              <h3 class="text-4xl font-bold">Leather Bags</h3>
+              <p class="text-sm font-normal">
+                Lorem Ipsum is simply dummy text
+              </p>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script setup>
@@ -442,5 +509,30 @@ const kidProduct = ref([
 .products {
   background: #e9e9e9;
   box-shadow: 2px 2px 24px 0px rgba(0, 0, 0, 0.25);
+}
+
+.our-product-image1 {
+  height: 449px;
+  background: url("../assets/images/our-product/img-prod1.png");
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+.our-product-image2 {
+  height: 449px;
+  background: url("../assets/images/our-product/img-prod2.png");
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+.our-product-image3 {
+  height: 449px;
+  background: url("../assets/images/our-product/img-prod3.png");
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+.our-product-image4 {
+  height: 449px;
+  background: url("../assets/images/our-product/img-prod4.png");
+  object-fit: cover;
+  background-repeat: no-repeat;
 }
 </style>
