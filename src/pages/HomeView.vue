@@ -257,7 +257,7 @@
       </div>
     </div>
   </section>
-  <section class="our-product bg-white min-h-screen">
+  <section class="our-product bg-white">
     <div
       class="flex items-center max-w-7xl px-2 sm:px-6 lg:px-8 mx-auto my-[30px]"
     >
@@ -313,7 +313,7 @@
           <!--  -->
           <div class="our-product-image4 flex items-center justify-center">
             <div class="text">
-              <h3 class="text-4xl font-bold">Leather Bags</h3>
+              <h3 class="text-4xl font-bold">Different Types</h3>
               <p class="text-sm font-normal">
                 Lorem Ipsum is simply dummy text
               </p>
@@ -324,6 +324,21 @@
       </div>
     </div>
   </section>
+  <section class="socmed bg-[#E9E9E9] py-[90px]">
+    <div class="max-w-7xl px-2 sm:px-6 lg:px-8 mx-auto my-[30px]">
+      <h1 class="text-4xl font-bold mb-5">Social Media</h1>
+      <h6 class="text-sm font-normal mb-5">
+        Lorem Ipsum is simply dummy text of the printingand typesetting
+        industry.
+      </h6>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-5"
+      >
+        <SocmedCard v-for="image in socmed" :key="image" :image="image" />
+      </div>
+    </div>
+  </section>
+  <Footer />
 </template>
 
 <script setup>
@@ -331,7 +346,8 @@ import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
 import "vue3-carousel/dist/carousel.css";
 import { ref } from "vue";
 import CategoryBox from "../components/CategoryBox.vue";
-import ProductCard from "../components/ProductCard.vue";
+import SocmedCard from "../components/SocmedCard.vue";
+import Footer from "../components/Footer.vue";
 
 const categories = ref([
   {
@@ -497,6 +513,15 @@ const kidProduct = ref([
     image: "kid6.png",
     stars: 4.5,
   },
+]);
+
+const socmed = ref([
+  "socmed1.png",
+  "socmed2.png",
+  "socmed3.png",
+  "socmed4.png",
+  "socmed5.png",
+  "socmed6.png",
 ]);
 </script>
 

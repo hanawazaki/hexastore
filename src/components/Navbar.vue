@@ -17,7 +17,7 @@
         >
           <!-- logo -->
           <div class="flex flex-shrink-0 items-center">
-            <Logo />
+            <Logo variant="black" />
           </div>
           <!-- desktop menu -->
           <div class="hidden md:ml-6 md:flex">
