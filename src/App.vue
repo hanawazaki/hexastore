@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar.vue";
 </script>
 
 <template>
-  <div>
+  <div class="min-h-screen">
     <Navbar />
     <RouterView />
   </div>
