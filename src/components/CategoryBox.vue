@@ -44,6 +44,8 @@ defineProps({
 const imgPath = (image) => {
   return `/src/assets/images/${image}`;
 };
+
+// console.log("imgPath", imgPath);
 </script>
 
 <style scoped>
