@@ -28,7 +28,7 @@
           </div>
         </div>
         <img
-          src="../assets/images/images.png"
+          src="/assets/images/images.png"
           alt="image1"
           class="w-full h-full max-w-lg sm:max-w-xl object-cover"
         />
