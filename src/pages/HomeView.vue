@@ -528,9 +528,6 @@ const socmed = ref([
 <style scoped>
 @import "../style.css";
 
-@layer components {
-}
-
 .products {
   background: #e9e9e9;
   box-shadow: 2px 2px 24px 0px rgba(0, 0, 0, 0.25);

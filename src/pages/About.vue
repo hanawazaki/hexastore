@@ -1,5 +1,4 @@
 <template>
-  <!-- <div class="h-full"> -->
   <section class="about mb-[90px]">
     <div class="container mx-auto py-9 lg:py-[90px] px-0 lg:px-20">
       <h2 class="text-white text-4xl lg:text-[56px] font-bold text-center mb-5">
@@ -68,7 +67,6 @@
     </div>
   </section>
   <Footer />
-  <!-- </div> -->
 </template>
 
 <script setup>

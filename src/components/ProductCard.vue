@@ -1,14 +1,15 @@
 <template>
   <div class="product-card mr-3 w-[400px]">
+    <h3 class="text-4xl font-bold text-center mb-5">{{ name }}</h3>
+
     <img
       :src="`src/assets/images/product-men/${image}`"
       alt="men1"
-      class="h-[445px] w-full object-cover"
+      class="h-[445px] w-full object-cover mb-5"
     />
-    <div class="flex flex-col px-3 py-6 bg-primary">
+    <div class="flex flex-col px-3 py-6 bg-primary rounded-lg">
       <div class="flex flex-row justify-between items-center">
         <h3 class="text-[22px] font-medium">{{ name }}</h3>
-        <img src="../assets/stars.svg" alt="stars" />
       </div>
       <div class="flex flex-row justify-between items-baseline">
         <h3 class="text-lg font-normal">${{ price }}</h3>
