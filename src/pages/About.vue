@@ -32,7 +32,7 @@
           <h3 class="px-6 about-title">Target Market Summary</h3>
           <div class="">
             <img
-              src="../assets/images/target-market.png.png"
+              src="../assets/images/target-market.png"
               alt="target-market"
               class="h-full bg-cover w-full"
             />
