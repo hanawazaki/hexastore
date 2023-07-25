@@ -19,15 +19,13 @@
       </RouterLink>
     </div>
     <!--  -->
-    <img
-      :src="require(`../assets/images/${image}`)"
-      alt="image1"
-      class="w-full"
-    />
+    <img :src="imgPath(image)" alt="image1" class="w-full" />
   </div>
 </template>
 
 <script setup>
+import { computed } from "vue";
+
 defineProps({
   category: {
     type: String,
@@ -42,6 +40,10 @@ defineProps({
     type: String,
   },
 });
+
+const imgPath = (image) => {
+  return `/src/assets/images/${image}`;
+};
 </script>
 
 <style scoped>
