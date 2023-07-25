@@ -19,7 +19,7 @@
       </RouterLink>
     </div>
     <!--  -->
-    <img :src="`../assets/images/${image}`" alt="image1" class="w-full" />
+    <img :src="`/assets/images/${image}`" alt="image1" class="w-full" />
   </div>
 </template>
 
