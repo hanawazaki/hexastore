@@ -42,7 +42,7 @@ defineProps({
 });
 
 const imgPath = (image) => {
-  return `/src/assets/images/${image}`;
+  return `./${image}`;
 };
 
 // console.log("imgPath", imgPath);
