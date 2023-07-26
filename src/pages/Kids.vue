@@ -7,9 +7,9 @@
         Lorem Ipsum is simply dummy text of the printingand typesetting
         industry.
       </h6>
-      <div class="flex flex-row flex-wrap gap-5">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
         <div
-          class="product-card w-[400px]"
+          class="product-card w-auto"
           v-for="product in latestProd"
           :key="product.id"
         >
@@ -75,9 +75,9 @@
         Lorem Ipsum is simply dummy text of the printingand typesetting
         industry.
       </h6>
-      <div class="flex flex-row flex-wrap gap-5">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
         <div
-          class="product-card w-[400px]"
+          class="product-card w-auto"
           v-for="product in featuredProd"
           :key="product.id"
         >
@@ -149,9 +149,9 @@
         Lorem Ipsum is simply dummy text of the printingand typesetting
         industry.
       </h6>
-      <div class="flex flex-row flex-wrap gap-5">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
         <div
-          class="product-card w-[400px]"
+          class="product-card w-auto"
           v-for="product in casualProd"
           :key="product.id"
         >
