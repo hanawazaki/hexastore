@@ -3,17 +3,17 @@
     <div class="absolute z-1 bg-shade w-full h-full"></div>
     <!--  -->
     <div
-      class="content-box w-full text-white absolute z-2 px-5 top-[50%] translate-y-[-50%] xl:content-box-xl xl2:content-box-xl2"
+      class="content-box w-full text-white absolute z-2 px-2 lg:px-5 top-[50%] translate-y-[-50%] xl:content-box-xl xl2:content-box-xl2"
     >
-      <h1 class="text-lg font-normal mb-2 xl:title-xl xl2:title-xl2">
+      <h1 class="text-sm lg:text-lg font-normal mb-2 xl:title-xl xl2:title-xl2">
         {{ category }}
       </h1>
-      <p class="text-sm font-normal mb-5 xl:desc-xl xl2:desc-xl2">
+      <p class="text-xs font-normal mb-2 md:mb-5 xl:desc-xl xl2:desc-xl2">
         {{ description }}
       </p>
       <RouterLink
         :to="link"
-        class="border-2 border-greyCst bg-transparent px-2 py-2 md:button-md lg:button-lg xl:button-xl xl2:button-xl2 hover:bg-white hover:text-black"
+        class="border-2 border-greyCst bg-transparent w-full text-sm lg:text-lg p-[0.25rem] md:button-md lg:button-lg xl:button-xl xl2:button-xl2 hover:bg-white hover:text-black"
       >
         Discover More
       </RouterLink>

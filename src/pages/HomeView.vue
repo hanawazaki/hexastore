@@ -1,7 +1,7 @@
 <template>
   <section class="hero mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-5 my-[44px]">
-      <div class="relative sm:mx-auto md:row-span-2 md:col-span-2">
+    <div class="flex flex-col sm:flex-row gap-5 my-[44px]">
+      <div class="relative mx-auto w-12/12 md:w-6/12">
         <div
           class="text absolute z-1 bg-shade w-full h-full max-w-lg sm:max-w-xl"
         ></div>
@@ -15,7 +15,7 @@
               We Are Hexashop
             </h1>
             <p
-              class="text-xs font-normal mb-7 md:pr-16 sm:text-sm md:text-base"
+              class="text-xs font-normal mb-7 lg:pr-16 sm:text-sm md:text-base"
             >
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
@@ -34,14 +34,16 @@
         />
       </div>
 
-      <CategoryBox
-        v-for="cat in categories"
-        :key="cat.id"
-        :category="cat.category"
-        :image="cat.image"
-        :description="cat.desc"
-        :link="cat.link"
-      />
+      <div class="mx-auto w-12/12 md:w-6/12 grid grid-cols-2 grid-rows-2 gap-5">
+        <CategoryBox
+          v-for="cat in categories"
+          :key="cat.id"
+          :category="cat.category"
+          :image="cat.image"
+          :description="cat.desc"
+          :link="cat.link"
+        />
+      </div>
     </div>
   </section>
   <section class="products">

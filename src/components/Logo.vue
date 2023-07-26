@@ -2,6 +2,7 @@
   <div class="flex items-center">
     <div class="relative">
       <svg
+        class="w-8 mr-2 lg:w-[60px]"
         xmlns="http://www.w3.org/2000/svg"
         width="60"
         height="60"
@@ -14,14 +15,14 @@
         />
       </svg>
       <label
-        class="absolute font-bold text-2xl z-10 top-[14px] left-[21px]"
+        class="absolute font-bold text-base lg:text-2xl z-10 top-[18px] lg:top-[14px] left-[10px] lg:left-[21px]"
         :class="`text-${variant == 'black' ? 'white' : 'black'}`"
         >H</label
       >
     </div>
     <div class="flex flex-col gap-0">
       <h2
-        class="text-lg leading-4 font-bold"
+        class="text-base leading-4 lg:text-lg font-bold"
         :class="variant === 'black' ? 'text-black' : 'text-white'"
       >
         HEXASHOP
