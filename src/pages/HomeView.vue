@@ -70,9 +70,9 @@
   </section>
   <section class="our-product bg-white">
     <div
-      class="flex items-center max-w-7xl px-2 sm:px-6 lg:px-8 mx-auto my-[30px]"
+      class="flex flex-col gap-5 lg:flex-row items-center max-w-7xl px-2 sm:px-6 lg:px-8 mx-auto my-[30px]"
     >
-      <div class="our-product-text pr-[105px] w-6/12">
+      <div class="our-product-text lg:pr-[105px] w-full lg:w-6/12">
         <h2 class="text-4xl font-bold mb-5">Explore Our Products</h2>
         <p class="text-sm font-normal">
           Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -103,10 +103,12 @@
           including versions of Lorem Ipsu
         </p>
       </div>
-      <div class="w-6/12">
-        <div class="grid grid-cols-2 gap-5">
+      <div class="w-full lg:w-6/12">
+        <div class="sm:min-[640px]:grid-cols-2 grid grid-cols-1 gap-5">
           <!--  -->
-          <div class="our-product-image1 flex items-center justify-center">
+          <div
+            class="our-product-image1 border flex items-center justify-center"
+          >
             <div class="text">
               <h3 class="text-4xl font-bold">Leather Bags</h3>
               <p class="text-sm font-normal">
@@ -115,14 +117,13 @@
             </div>
           </div>
           <!--  -->
+          <div class="our-product-image2 border"></div>
           <!--  -->
-          <div class="our-product-image2"></div>
+          <div class="our-product-image3 border"></div>
           <!--  -->
-          <!--  -->
-          <div class="our-product-image3"></div>
-          <!--  -->
-          <!--  -->
-          <div class="our-product-image4 flex items-center justify-center">
+          <div
+            class="our-product-image4 border flex items-center justify-center"
+          >
             <div class="text">
               <h3 class="text-4xl font-bold">Different Types</h3>
               <p class="text-sm font-normal">
@@ -348,23 +349,27 @@ const socmed = ref([
   background: url("../../our-product/img-prod1.png");
   object-fit: cover;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .our-product-image2 {
   height: 449px;
   background: url("../../our-product/img-prod2.png");
   object-fit: cover;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .our-product-image3 {
   height: 449px;
   background: url("../../our-product/img-prod3.png");
   object-fit: cover;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .our-product-image4 {
   height: 449px;
   background: url("../../our-product/img-prod4.png");
   object-fit: cover;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>
