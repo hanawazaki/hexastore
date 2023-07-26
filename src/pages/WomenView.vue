@@ -14,7 +14,7 @@
           :key="product.id"
         >
           <img
-            :src="`src/assets/images/product-women/${product.image}`"
+            :src="imgPath(product.image)"
             alt="women1"
             class="h-[445px] w-full object-cover"
           />
@@ -82,7 +82,7 @@
           :key="product.id"
         >
           <img
-            :src="`src/assets/images/product-women/${product.image}`"
+            :src="imgPath(product.image)"
             alt="women1"
             class="h-[445px] w-full object-cover"
           />
@@ -156,7 +156,7 @@
           :key="product.id"
         >
           <img
-            :src="`src/assets/images/product-women/${product.image}`"
+            :src="imgPath(product.image)"
             alt="women1"
             class="h-[445px] w-full object-cover"
           />
@@ -237,6 +237,7 @@ import SocmedCard from "../components/SocmedCard.vue";
 const casualProd = ref([]);
 const featuredProd = ref([]);
 const latestProd = ref([]);
+
 const collection = ref({
   images: ["men-collection1.png", "men-collection2.png"],
   title: "Men's Collection",
@@ -418,6 +419,10 @@ const socmed = ref([
   "socmed5.png",
   "socmed6.png",
 ]);
+
+const imgPath = (image) => {
+  return `./products/${image}`;
+};
 
 onMounted(() => {
   latestProd.value = womenProduct.value.filter((latest) => !latest.isFeatured);

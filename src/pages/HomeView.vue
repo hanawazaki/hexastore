@@ -57,7 +57,7 @@
           <Slide v-for="product in menProduct" :key="product.id">
             <div class="product-card mr-3 w-[400px]">
               <img
-                :src="`src/assets/images/product-men/${product.image}`"
+                :src="imgPath(product.image)"
                 alt="men1"
                 class="h-[445px] w-full object-cover"
               />
@@ -127,7 +127,7 @@
           <Slide v-for="product in womenProduct" :key="product.id">
             <div class="product-card mr-3 w-[400px]">
               <img
-                :src="`src/assets/images/product-women/${product.image}`"
+                :src="imgPath(product.image)"
                 alt="women1"
                 class="h-[445px] w-full object-cover"
               />
@@ -197,7 +197,7 @@
           <Slide v-for="product in kidProduct" :key="product.id">
             <div class="product-card mr-3 w-[400px]">
               <img
-                :src="`src/assets/images/product-kids/${product.image}`"
+                :src="imgPath(product.image)"
                 alt="men1"
                 class="h-[445px] w-full object-cover"
               />
@@ -523,6 +523,10 @@ const socmed = ref([
   "socmed5.png",
   "socmed6.png",
 ]);
+
+const imgPath = (image) => {
+  return `./products/${image}`;
+};
 </script>
 
 <style scoped>
@@ -535,25 +539,25 @@ const socmed = ref([
 
 .our-product-image1 {
   height: 449px;
-  background: url("../assets/images/our-product/img-prod1.png");
+  background: url("./our-product/img-prod1.png");
   object-fit: cover;
   background-repeat: no-repeat;
 }
 .our-product-image2 {
   height: 449px;
-  background: url("../assets/images/our-product/img-prod2.png");
+  background: url("./our-product/img-prod2.png");
   object-fit: cover;
   background-repeat: no-repeat;
 }
 .our-product-image3 {
   height: 449px;
-  background: url("../assets/images/our-product/img-prod3.png");
+  background: url("./our-product/img-prod3.png");
   object-fit: cover;
   background-repeat: no-repeat;
 }
 .our-product-image4 {
   height: 449px;
-  background: url("../assets/images/our-product/img-prod4.png");
+  background: url("./our-product/img-prod4.png");
   object-fit: cover;
   background-repeat: no-repeat;
 }

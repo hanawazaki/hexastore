@@ -1,10 +1,6 @@
 <template>
   <div class="socmed-card flex justify-center">
-    <img
-      :src="`src/assets/images/socmed/${image}`"
-      alt="socmed1"
-      class="h-[281px]"
-    />
+    <img :src="imgSocmedPath(image)" alt="socmed1" class="h-[281px]" />
   </div>
 </template>
 
@@ -14,6 +10,10 @@ defineProps({
     type: String,
   },
 });
+
+const imgSocmedPath = (image) => {
+  return `./socmed/${image}`;
+};
 </script>
 
 <style lang="scss" scoped></style>

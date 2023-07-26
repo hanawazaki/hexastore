@@ -14,7 +14,7 @@
           :key="product.id"
         >
           <img
-            :src="`src/assets/images/product-kids/${product.image}`"
+            :src="imgPath(product.image)"
             alt="kid1"
             class="h-[445px] w-full object-cover"
           />
@@ -82,7 +82,7 @@
           :key="product.id"
         >
           <img
-            :src="`src/assets/images/product-kids/${product.image}`"
+            :src="imgPath(product.image)"
             alt="kid1"
             class="h-[445px] w-full object-cover"
           />
@@ -156,7 +156,7 @@
           :key="product.id"
         >
           <img
-            :src="`src/assets/images/product-kids/${product.image}`"
+            :src="imgPath(product.image)"
             alt="kid1"
             class="h-[445px] w-full object-cover"
           />
@@ -301,6 +301,10 @@ const kidProduct = ref([
     isFeatured: false,
   },
 ]);
+
+const imgPath = (image) => {
+  return `./products/${image}`;
+};
 
 onMounted(() => {
   latestProd.value = kidProduct.value.filter((latest) => !latest.isFeatured);

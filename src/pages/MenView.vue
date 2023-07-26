@@ -13,7 +13,7 @@
           :key="product.id"
         >
           <img
-            :src="`src/assets/images/product-men/${product.image}`"
+            :src="imgPath(product.image)"
             alt="men1"
             class="h-[445px] w-full object-cover"
           />
@@ -81,7 +81,7 @@
           :key="product.id"
         >
           <img
-            :src="`src/assets/images/product-men/${product.image}`"
+            :src="imgPath(product.image)"
             alt="men1"
             class="h-[445px] w-full object-cover"
           />
@@ -149,7 +149,7 @@
           :key="product.id"
         >
           <img
-            :src="`src/assets/images/product-men/${product.image}`"
+            :src="imgPath(product.image)"
             alt="men1"
             class="h-[445px] w-full object-cover"
           />
@@ -364,6 +364,10 @@ const dataCollection = ref([
 //   collection.value = dataCollection.value.find((coll) => coll.id === id);
 //   console.log(collection.value);
 // };
+
+const imgPath = (image) => {
+  return `./products/${image}`;
+};
 
 onMounted(() => {
   latestProd.value = menProduct.value.filter((latest) => !latest.isFeatured);
