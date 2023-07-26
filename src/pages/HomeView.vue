@@ -539,25 +539,25 @@ const imgPath = (image) => {
 
 .our-product-image1 {
   height: 449px;
-  background: url("./our-product/img-prod1.png");
+  background: url("../../our-product/img-prod1.png");
   object-fit: cover;
   background-repeat: no-repeat;
 }
 .our-product-image2 {
   height: 449px;
-  background: url("./our-product/img-prod2.png");
+  background: url("../../our-product/img-prod2.png");
   object-fit: cover;
   background-repeat: no-repeat;
 }
 .our-product-image3 {
   height: 449px;
-  background: url("./our-product/img-prod3.png");
+  background: url("../../our-product/img-prod3.png");
   object-fit: cover;
   background-repeat: no-repeat;
 }
 .our-product-image4 {
   height: 449px;
-  background: url("./our-product/img-prod4.png");
+  background: url("../../our-product/img-prod4.png");
   object-fit: cover;
   background-repeat: no-repeat;
 }

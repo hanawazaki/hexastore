@@ -7,7 +7,7 @@
           <img
             v-for="image in props.images"
             :key="image"
-            :src="`src/assets/images/${image}`"
+            :src="imgPath(image)"
             alt="kid-collection-1"
             class="max-h-[430px] m-0"
           />
@@ -50,6 +50,10 @@ const props = defineProps({
     type: String,
   },
 });
+
+const imgPath = (image) => {
+  return `./collections/${image}`;
+};
 </script>
 
 <style scoped>
