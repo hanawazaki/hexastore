@@ -1,7 +1,9 @@
 <template>
   <footer class="relative bg-dark">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg-px-8">
-      <div class="flex text-white py-[30px] gap-[134px]">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 text-white py-[30px] gap-10 lg:gap-[134px]"
+      >
         <div class="logo flex flex-col gap-5">
           <Logo variant="white" />
           <h5 class="text-base font-semibold">
