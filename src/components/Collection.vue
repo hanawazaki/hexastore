@@ -1,19 +1,23 @@
 <template>
-  <div class="relative bg-collection mb-[55px] min-h-[500px]">
+  <div class="relative bg-collection mb-[55px] min-h-screen">
     <div class="overlay absolute z-1 bg-shade w-full h-full"></div>
-    <div class="container absolute z-2">
-      <div class="flex flex-row items-center py-[35px] px-8 1440:px-[100px]">
-        <div class="photos flex flex-row w-7/12">
+    <div class="container absolute left-[50%] translate-x-[-50%] z-2">
+      <div
+        class="flex flex-col lg:flex-row items-center py-[35px] px-8 1440:px-[100px]"
+      >
+        <div
+          class="photos hidden lg:flex flex-row justify-center w-full lg:w-7/12"
+        >
           <img
             v-for="image in props.images"
             :key="image"
             :src="imgPath(image)"
             alt="kid-collection-1"
-            class="max-h-[430px] m-0"
+            class="max-h-[300px] xl:max-h-[430px] m-0"
           />
         </div>
 
-        <div class="text-white w-5/12">
+        <div class="text-white w-full justify-center mx-auto lg:w-5/12">
           <h2 class="text-4xl font-bold text-center mb-5">
             {{ props.title }}
           </h2>
@@ -58,6 +62,8 @@ const imgPath = (image) => {
 
 <style scoped>
 .bg-collection {
-  background-image: url("../assets/images/kid-collection-bg.png");
+  background-image: url("./collections/kid-collection-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>
