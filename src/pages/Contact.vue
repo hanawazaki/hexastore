@@ -8,10 +8,10 @@
       </h2>
       <div class="flex flex-col justify-center md:flex-row gap-5">
         <div
-          class="border bg-white w-[610px] px-9 py-[102px] flex flex-col gap-5 justify-center items-center"
+          class="border bg-white w-auto px-9 py-[102px] flex flex-col gap-5 justify-center items-center"
         >
           <img src="../assets/phone.svg" class="contact-img" alt="phone" />
-          <h2 class="contact-title">Talk To Sales</h2>
+          <h2 class="contact-title text-center">Talk To Sales</h2>
           <p class="contact-desc">
             orem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -23,10 +23,10 @@
           <a href="#" class="text-xl font-normal"> View all global Members </a>
         </div>
         <div
-          class="border bg-white w-[610px] px-9 py-[102px] flex flex-col gap-5 justify-center items-center"
+          class="border bg-white w-auto px-9 py-[102px] flex flex-col gap-5 justify-center items-center"
         >
           <img src="../assets/cs.svg" class="contact-img" alt="phone" />
-          <h2 class="contact-title">Contact Customer support</h2>
+          <h2 class="contact-title text-center">Contact Customer support</h2>
           <p class="contact-desc">
             orem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
